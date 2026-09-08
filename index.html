@@ -32,6 +32,14 @@
             ☼
           </button>
           <button id="languageToggle" class="language-button">FA</button>
+          <button
+            id="pdfDownload"
+            class="icon-button"
+            aria-label="Download PDF"
+            title="Download PDF"
+          >
+            ⬇
+          </button>
         </div>
       </div>
     </header>
@@ -74,7 +82,6 @@
         <div class="content">
           <section id="about" class="section">
             <div class="section-heading">
-              <span class="section-number">01</span>
               <h2 data-i18n="sections.about">About</h2>
             </div>
             <p class="section-text" data-bind="about"></p>
@@ -82,7 +89,6 @@
 
           <section id="experience" class="section">
             <div class="section-heading">
-              <span class="section-number">02</span>
               <h2 data-i18n="sections.experience">Experience</h2>
             </div>
             <div id="experienceList" class="timeline"></div>
@@ -90,7 +96,6 @@
 
           <section id="education" class="section">
             <div class="section-heading">
-              <span class="section-number">03</span>
               <h2 data-i18n="sections.education">Education</h2>
             </div>
             <div id="educationList" class="timeline"></div>
@@ -98,7 +103,6 @@
 
           <section id="projects" class="section">
             <div class="section-heading">
-              <span class="section-number">04</span>
               <h2 data-i18n="sections.projects">Projects</h2>
             </div>
             <div id="projectList" class="project-grid"></div>
@@ -106,7 +110,6 @@
 
           <section id="teaching" class="section">
             <div class="section-heading">
-              <span class="section-number">05</span>
               <h2 data-i18n="sections.teaching">Teaching</h2>
             </div>
             <div id="teachingList" class="timeline"></div>
@@ -121,5 +124,6 @@
     </footer>
 
     <script src="js/app.js"></script>
+    <script src="js/pdf-export.js"></script>
   </body>
 </html>
