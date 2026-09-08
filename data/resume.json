@@ -1,0 +1,226 @@
+{
+  "translations": {
+    "nav": {
+      "experience": "Experience",
+      "skills": "Skills",
+      "education": "Education",
+      "projects": "Projects"
+    },
+    "sections": {
+      "about": "About",
+      "experience": "Experience",
+      "skills": "Skills",
+      "education": "Education",
+      "projects": "Projects",
+      "teaching": "Teaching",
+      "languages": "Languages"
+    }
+  },
+  "personal": {
+    "label": {
+      "en": "Backend Developer · Django",
+      "fa": "برنامه‌نویس Backend · Django"
+    },
+    "name": {
+      "en": "Ali Akbar Sobhanpoor",
+      "fa": "علی اکبر سبحان‌پور"
+    },
+    "title": {
+      "en": "Backend Developer (Django)",
+      "fa": "برنامه‌نویس بک‌اند (Django)"
+    },
+    "summary": {
+      "en": "Software developer with 3 years of experience in designing, developing and testing web applications, focused on Django, performance optimization, secure software and continuous learning.",
+      "fa": "توسعه‌دهنده نرم‌افزار با ۳ سال تجربه در طراحی، توسعه و تست نرم‌افزارهای تحت وب؛ با تمرکز بر Django، بهینه‌سازی عملکرد، توسعه نرم‌افزارهای ایمن و یادگیری مداوم."
+    },
+    "email": "aliakbarsobhanpoor@gmail.com",
+    "phone": "09178857636",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/aliakbarsobhanpoor"
+      }
+    ]
+  },
+  "about": {
+    "en": "I enjoy programming, Linux and learning new technologies. My experience includes identifying and fixing functional and security issues through careful testing, optimizing application performance, writing complex database queries, developing APIs and integrating web applications with external services.",
+    "fa": "علاقه‌مند به برنامه‌نویسی، لینوکس و یادگیری فناوری‌های جدید هستم. تجربه من شامل شناسایی و رفع مشکلات عملکردی و امنیتی، بهینه‌سازی عملکرد سامانه، نگارش کوئری‌های پیچیده، توسعه API و یکپارچه‌سازی نرم‌افزارهای تحت وب با سرویس‌های خارجی است."
+  },
+  "skills": [
+    {
+      "name": "Python"
+    },
+    {
+      "name": "Django"
+    },
+    {
+      "name": "Django REST Framework"
+    },
+    {
+      "name": "FastAPI"
+    },
+    {
+      "name": "PostgreSQL"
+    },
+    {
+      "name": "MongoDB"
+    },
+    {
+      "name": "Redis"
+    },
+    {
+      "name": "Celery"
+    },
+    {
+      "name": "Docker"
+    },
+    {
+      "name": "Linux"
+    },
+    {
+      "name": "Git"
+    },
+    {
+      "name": "GitHub"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Dolox",
+      "position": {
+        "en": "Backend Developer",
+        "fa": "Backend Developer"
+      },
+      "start": "Jul 2025",
+      "end": "Sep 2025",
+      "description": {
+        "en": "<ul><li>Deployed the Dolox.ir car auction platform on the web.</li><li>Dockerized the application and used Nginx for traffic management.</li><li>Worked on stable deployment, web infrastructure and application performance.</li></ul>",
+        "fa": "<ul><li>مسئولیت استقرار پلتفرم مزایده خودرو Dolox.ir بر بستر وب.</li><li>Dockerize کردن سامانه و استفاده از Nginx برای مدیریت ترافیک.</li><li>کار روی استقرار پایدار، زیرساخت وب و بهینه‌سازی عملکرد سامانه.</li></ul>"
+      }
+    },
+    {
+      "company": "Dideh Pardaz Saba",
+      "position": {
+        "en": "Backend Developer",
+        "fa": "برنامه‌نویس بک‌اند"
+      },
+      "start": "Oct 2023",
+      "end": "Oct 2025",
+      "description": {
+        "en": "<ul><li>Contributed to the development of the Nama educational management system, used by organizations including Jihad Daneshgahi Tehran, Tehran University of Medical Sciences Jihad and Isfahan Cultural & Sports Organization.</li><li>Developed new services and features with Django and focused on performance optimization.</li><li>Improved complex queries by up to 30% in some cases and implemented caching where needed.</li><li>Developed APIs and documentation for integration with other systems, including SSO, virtual classroom services and payment gateways.</li></ul>",
+        "fa": "<ul><li>مشارکت در طراحی و توسعه نرم‌افزار مدیریت آموزشی «نما» که در سازمان‌هایی از جمله جهاد دانشگاهی تهران، جهاد دانشگاهی علوم پزشکی تهران و سازمان فرهنگی‌ورزشی اصفهان استفاده می‌شود.</li><li>توسعه سرویس‌ها و قابلیت‌های جدید با Django با تمرکز بر بهینه‌سازی عملکرد.</li><li>بهینه‌سازی کوئری‌های پیچیده تا ۳۰٪ در برخی موارد و پیاده‌سازی caching در بخش‌های مورد نیاز.</li><li>توسعه API و مستندسازی برای اتصال به سامانه‌های دیگر، از جمله SSO، سامانه‌های کلاس مجازی و درگاه‌های پرداخت.</li></ul>"
+      }
+    },
+    {
+      "company": "Yasan Academy",
+      "position": {
+        "en": "Programming Instructor",
+        "fa": "مدرس برنامه‌نویسی"
+      },
+      "start": "Oct 2023",
+      "end": "Oct 2024",
+      "description": {
+        "en": "<ul><li>Taught Python and WordPress to students aged 9–17.</li><li>Also taught fundamentals of HTML and CSS.</li><li>Strengthened communication, patience, educational creativity and the ability to simplify technical concepts.</li></ul>",
+        "fa": "<ul><li>تدریس Python و WordPress به رده سنی ۹ تا ۱۷ سال.</li><li>آموزش مفاهیم پایه HTML و CSS.</li><li>تقویت مهارت‌های ارتباطی، صبر، خلاقیت آموزشی و ساده‌سازی مفاهیم فنی.</li></ul>"
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "Iran University of Medical Sciences",
+      "degree": {
+        "en": "M.Sc. · Medical Library & Information Science",
+        "fa": "کارشناسی ارشد · کتابداری و اطلاع‌رسانی پزشکی"
+      },
+      "start": "2025",
+      "end": "Present",
+      "description": {
+        "en": "Currently studying.",
+        "fa": "در حال تحصیل."
+      }
+    },
+    {
+      "institution": "Isfahan University of Medical Sciences",
+      "degree": {
+        "en": "B.Sc. · Medical Library & Information Science",
+        "fa": "کارشناسی · کتابداری و اطلاع‌رسانی پزشکی"
+      },
+      "start": "2020",
+      "end": "2024",
+      "description": {
+        "en": "My programming journey started here with C++ in an introductory programming course.",
+        "fa": "مسیر برنامه‌نویسی من از این رشته و با درس مبانی برنامه‌نویسی و زبان ++C شروع شد."
+      }
+    }
+  ],
+  "projects": [
+    {
+      "name": {
+        "en": "Nama Educational Management System",
+        "fa": "سامانه مدیریت آموزشی نما"
+      },
+      "description": {
+        "en": "Backend development and performance optimization for an educational management platform.",
+        "fa": "توسعه Backend و بهینه‌سازی عملکرد یک سامانه مدیریت آموزشی."
+      },
+      "stack": [
+        "Django",
+        "PostgreSQL",
+        "Redis",
+        "REST API"
+      ]
+    },
+    {
+      "name": {
+        "en": "Dolox",
+        "fa": "Dolox"
+      },
+      "description": {
+        "en": "Web deployment and infrastructure work for a car auction platform.",
+        "fa": "استقرار وب و کار زیرساختی برای یک پلتفرم مزایده خودرو."
+      },
+      "stack": [
+        "Docker",
+        "Nginx",
+        "Linux"
+      ]
+    }
+  ],
+  "teaching": [
+    {
+      "organization": "Toplearn",
+      "role": {
+        "en": "FastAPI Instructor",
+        "fa": "مدرس FastAPI"
+      },
+      "start": "May 2026",
+      "end": "Present",
+      "description": {
+        "en": "Recording an introductory-to-advanced FastAPI course. The course attracted more than 150 students during its first two weeks.",
+        "fa": "در حال ضبط دوره آموزش مقدماتی تا پیشرفته FastAPI. این دوره در دو هفته اول بیش از ۱۵۰ دانشجو جذب کرد."
+      }
+    }
+  ],
+  "languages": [
+    {
+      "name": {
+        "en": "Persian",
+        "fa": "فارسی"
+      },
+      "level": {
+        "en": "Native",
+        "fa": "زبان مادری"
+      }
+    },
+    {
+      "name": {
+        "en": "English",
+        "fa": "انگلیسی"
+      },
+      "level": {
+        "en": "Intermediate",
+        "fa": "متوسط"
+      }
+    }
+  ]
+}

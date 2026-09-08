@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Minimal bilingual developer resume" />
+    <title>Ali Akbar Sobhanpoor — Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="#top" data-bind="personal.name">Resume</a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#experience" data-i18n="nav.experience">Experience</a>
+          <a href="#skills" data-i18n="nav.skills">Skills</a>
+          <a href="#education" data-i18n="nav.education">Education</a>
+          <a href="#projects" data-i18n="nav.projects">Projects</a>
+        </nav>
+        <div class="actions">
+          <button
+            id="themeToggle"
+            class="icon-button"
+            aria-label="Toggle theme"
+          >
+            ☼
+          </button>
+          <button id="languageToggle" class="language-button">FA</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow" data-bind="personal.label"></p>
+          <h1 data-bind="personal.name"></h1>
+          <h2 data-bind="personal.title"></h2>
+          <div class="hero-meta">
+            <a
+              class="meta-item meta-link"
+              data-bind="personal.email"
+              data-bind-attr="mailto"
+            ></a>
+            <a
+              class="meta-item meta-link"
+              data-bind="personal.phone"
+              data-bind-attr="tel"
+            ></a>
+          </div>
+          <p class="hero-summary" data-bind="personal.summary"></p>
+          <div class="links" id="heroLinks"></div>
+        </div>
+      </section>
+
+      <div class="container page-grid">
+        <aside class="sidebar">
+          <section class="side-section" id="skills">
+            <h3 data-i18n="sections.skills">Skills</h3>
+            <div id="skillList" class="skill-list"></div>
+          </section>
+          <section class="side-section">
+            <h3 data-i18n="sections.languages">Languages</h3>
+            <div id="languageList" class="plain-list"></div>
+          </section>
+        </aside>
+
+        <div class="content">
+          <section id="about" class="section">
+            <div class="section-heading">
+              <span class="section-number">01</span>
+              <h2 data-i18n="sections.about">About</h2>
+            </div>
+            <p class="section-text" data-bind="about"></p>
+          </section>
+
+          <section id="experience" class="section">
+            <div class="section-heading">
+              <span class="section-number">02</span>
+              <h2 data-i18n="sections.experience">Experience</h2>
+            </div>
+            <div id="experienceList" class="timeline"></div>
+          </section>
+
+          <section id="education" class="section">
+            <div class="section-heading">
+              <span class="section-number">03</span>
+              <h2 data-i18n="sections.education">Education</h2>
+            </div>
+            <div id="educationList" class="timeline"></div>
+          </section>
+
+          <section id="projects" class="section">
+            <div class="section-heading">
+              <span class="section-number">04</span>
+              <h2 data-i18n="sections.projects">Projects</h2>
+            </div>
+            <div id="projectList" class="project-grid"></div>
+          </section>
+
+          <section id="teaching" class="section">
+            <div class="section-heading">
+              <span class="section-number">05</span>
+              <h2 data-i18n="sections.teaching">Teaching</h2>
+            </div>
+            <div id="teachingList" class="timeline"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer container">
+      <span data-bind="personal.name"></span>
+      <span>© <span id="year"></span></span>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
