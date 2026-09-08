@@ -190,21 +190,6 @@
       ]
     }
   ],
-  "teaching": [
-    {
-      "organization": "Toplearn",
-      "role": {
-        "en": "FastAPI Instructor",
-        "fa": "مدرس FastAPI"
-      },
-      "start": "May 2026",
-      "end": "Present",
-      "description": {
-        "en": "Recording an introductory-to-advanced FastAPI course. The course attracted more than 150 students during its first two weeks.",
-        "fa": "در حال ضبط دوره آموزش مقدماتی تا پیشرفته FastAPI. این دوره در دو هفته اول بیش از ۱۵۰ دانشجو جذب کرد."
-      }
-    }
-  ],
   "languages": [
     {
       "name": {
