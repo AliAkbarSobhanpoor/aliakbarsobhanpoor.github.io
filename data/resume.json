@@ -33,8 +33,6 @@
       "en": "Software developer with 3 years of experience in designing, developing and testing web applications, focused on Django, performance optimization, secure software and continuous learning.",
       "fa": "توسعه‌دهنده نرم‌افزار با ۳ سال تجربه در طراحی، توسعه و تست نرم‌افزارهای تحت وب؛ با تمرکز بر Django، بهینه‌سازی عملکرد، توسعه نرم‌افزارهای ایمن و یادگیری مداوم."
     },
-    "email": "aliakbarsobhanpoor@gmail.com",
-    "phone": "09178857636",
     "links": [
       {
         "label": "GitHub",
@@ -43,6 +41,14 @@
       {
         "label": "Website",
         "url": "https://aliakbarsobhanpoor.github.io"
+      },
+      {
+        "label": "09178857636",
+        "url": "tel:09178857636"
+      },
+      {
+        "label": "aliakbarsobhanpoor@gmail.com",
+        "url": "mailto:aliakbarsobhanpoor@gmail.com"
       }
     ]
   },
