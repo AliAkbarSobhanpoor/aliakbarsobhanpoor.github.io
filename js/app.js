@@ -92,19 +92,6 @@ function renderProjects() {
   `).join("");
 }
 
-function renderTeaching() {
-  $("#teachingList").innerHTML = state.data.teaching.map(item => `
-    <article class="timeline-item">
-      <div class="timeline-date">${item.start} — ${item.end}</div>
-      <div class="timeline-content">
-        <h3 class="timeline-title">${text(item.role)}</h3>
-        <div class="timeline-company">${item.organization}</div>
-        <div class="timeline-description">${text(item.description)}</div>
-      </div>
-    </article>
-  `).join("");
-}
-
 function render() {
   applyStaticText();
   renderLinks();
@@ -113,7 +100,6 @@ function render() {
   renderExperience();
   renderEducation();
   renderProjects();
-  renderTeaching();
   document.title = `${text(state.data.personal.name)} — ${text(state.data.personal.title)}`;
 }
 
