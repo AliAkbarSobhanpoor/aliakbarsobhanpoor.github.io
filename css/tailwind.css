@@ -1,1 +1,86 @@
 @import "tailwindcss";
+
+@theme {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-soft: var(--surface-soft);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-fa: "Vazirmatn", "Inter", system-ui, sans-serif;
+}
+
+@layer components {
+  .links a {
+    @apply rounded-full border border-line px-3 py-[7px] text-[0.82rem] transition duration-200 hover:-translate-y-px hover:border-accent hover:text-accent;
+  }
+
+  .skill {
+    @apply rounded-[7px] border border-line bg-surface px-2 py-1 text-[0.76rem] print:break-inside-avoid;
+  }
+
+  .hero-meta {
+    @apply flex min-w-[180px] gap-[5px] text-[0.88rem] text-muted max-md:mt-[26px];
+  }
+
+  .meta-item + .meta-item::before {
+    @apply me-2 opacity-50;
+    content: "•";
+  }
+
+  .section-number {
+    @apply text-[0.72rem] font-bold text-accent;
+  }
+
+  .timeline-item {
+    @apply grid gap-[5px] md:grid-cols-[150px_minmax(0,1fr)] md:gap-[26px];
+  }
+
+  .timeline-date {
+    @apply text-[0.78rem] text-muted md:pt-[3px];
+  }
+
+  .timeline-content {
+    @apply relative border-s border-line ps-[22px] before:absolute before:-start-1 before:top-[7px] before:h-[7px] before:w-[7px] before:rounded-full before:bg-accent before:content-[''];
+  }
+
+  .timeline-title {
+    @apply text-[1.05rem] font-bold;
+  }
+
+  .timeline-company {
+    @apply mb-3 mt-0.5 text-[0.85rem] text-accent;
+  }
+
+  .timeline-description {
+    @apply text-[0.88rem] text-muted;
+  }
+
+  .timeline-description ul {
+    @apply mt-2 list-disc ps-[18px];
+  }
+
+  .project {
+    @apply rounded-[14px] border border-line bg-surface p-[22px] print:break-inside-avoid;
+  }
+
+  .project h3 {
+    @apply mb-[7px] text-base font-bold;
+  }
+
+  .project p {
+    @apply mb-3.5 text-[0.84rem] text-muted;
+  }
+
+  .tags {
+    @apply flex flex-wrap gap-1.5;
+  }
+
+  .tag {
+    @apply rounded-full bg-accent-soft px-2 py-[3px] text-[0.7rem] text-accent;
+  }
+}

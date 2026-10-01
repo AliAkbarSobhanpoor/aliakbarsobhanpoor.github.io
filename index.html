@@ -13,29 +13,6 @@
     />
 
     <link rel="stylesheet" href="./css/tailwind.generated.css">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              bg: "var(--bg)",
-              surface: "var(--surface)",
-              soft: "var(--surface-soft)",
-              ink: "var(--text)",
-              muted: "var(--muted)",
-              line: "var(--line)",
-              accent: "var(--accent)",
-              "accent-soft": "var(--accent-soft)",
-            },
-            fontFamily: {
-              sans: ["Inter", "system-ui", "sans-serif"],
-              fa: ["Vazirmatn", "Inter", "system-ui", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
-
     <style>
       :root {
         --bg: #f6f7f9;
@@ -71,62 +48,6 @@
       }
     </style>
 
-    <style type="text/tailwindcss">
-      @layer components {
-        .links a {
-          @apply rounded-full border border-line px-3 py-[7px] text-[0.82rem] transition duration-200 hover:-translate-y-px hover:border-accent hover:text-accent;
-        }
-        .skill {
-          @apply rounded-[7px] border border-line bg-surface px-2 py-1 text-[0.76rem] print:break-inside-avoid;
-        }
-        .hero-meta {
-          @apply flex min-w-[180px] gap-[5px] text-[0.88rem] text-muted max-md:mt-[26px];
-        }
-        .meta-item + .meta-item::before {
-          @apply me-2 opacity-50;
-          content: "•";
-        }
-        .section-number {
-          @apply text-[0.72rem] font-bold text-accent;
-        }
-        .timeline-item {
-          @apply grid gap-[5px] md:grid-cols-[150px_minmax(0,1fr)] md:gap-[26px];
-        }
-        .timeline-date {
-          @apply text-[0.78rem] text-muted md:pt-[3px];
-        }
-        .timeline-content {
-          @apply relative border-s border-line ps-[22px] before:absolute before:-start-1 before:top-[7px] before:h-[7px] before:w-[7px] before:rounded-full before:bg-accent before:content-[''];
-        }
-        .timeline-title {
-          @apply text-[1.05rem] font-bold;
-        }
-        .timeline-company {
-          @apply mb-3 mt-0.5 text-[0.85rem] text-accent;
-        }
-        .timeline-description {
-          @apply text-[0.88rem] text-muted;
-        }
-        .timeline-description ul {
-          @apply mt-2 list-disc ps-[18px];
-        }
-        .project {
-          @apply rounded-[14px] border border-line bg-surface p-[22px] print:break-inside-avoid;
-        }
-        .project h3 {
-          @apply mb-[7px] text-base font-bold;
-        }
-        .project p {
-          @apply mb-3.5 text-[0.84rem] text-muted;
-        }
-        .tags {
-          @apply flex flex-wrap gap-1.5;
-        }
-        .tag {
-          @apply rounded-full bg-accent-soft px-2 py-[3px] text-[0.7rem] text-accent;
-        }
-      }
-    </style>
   </head>
 
   <body
@@ -183,7 +104,7 @@
       <section
         class="mx-auto w-[min(calc(100%-40px),1120px)] gap-10 border-b border-line pb-[52px] pt-16 md:flex md:items-end md:justify-between md:pb-[72px] md:pt-[92px] print:pt-5"
       >
-        <div class="max-w-[760px]">
+        <div class="max-w-190">
           <p
             class="mb-3.5 text-[0.78rem] font-bold uppercase tracking-[0.12em] text-accent rtl:tracking-normal"
             data-bind="personal.label"
