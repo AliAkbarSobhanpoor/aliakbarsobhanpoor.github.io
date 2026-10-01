@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="scroll-smooth scroll-pt-20">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,30 +11,166 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind (Play CDN). For production, use the Tailwind CLI instead. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bg: "var(--bg)",
+              surface: "var(--surface)",
+              soft: "var(--surface-soft)",
+              ink: "var(--text)",
+              muted: "var(--muted)",
+              line: "var(--line)",
+              accent: "var(--accent)",
+              "accent-soft": "var(--accent-soft)",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+              fa: ["Vazirmatn", "Inter", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      :root {
+        --bg: #f6f7f9;
+        --surface: #ffffff;
+        --surface-soft: #f0f2f5;
+        --text: #17202a;
+        --muted: #697586;
+        --line: #dfe3e8;
+        --accent: #0f766e;
+        --accent-soft: #dff5f1;
+      }
+      [data-theme="dark"] {
+        --bg: #0d1117;
+        --surface: #131a22;
+        --surface-soft: #1a222d;
+        --text: #edf2f7;
+        --muted: #9aa7b5;
+        --line: #293442;
+        --accent: #5eead4;
+        --accent-soft: #123f3a;
+      }
+      @media print {
+        :root,
+        [data-theme="dark"] {
+          --bg: #fff;
+          --surface: #fff;
+          --text: #111;
+          --muted: #444;
+          --line: #ccc;
+          --accent: #111;
+          --accent-soft: #eee;
+        }
+      }
+    </style>
+
+    <style type="text/tailwindcss">
+      @layer components {
+        .links a {
+          @apply rounded-full border border-line px-3 py-[7px] text-[0.82rem] transition duration-200 hover:-translate-y-px hover:border-accent hover:text-accent;
+        }
+        .skill {
+          @apply rounded-[7px] border border-line bg-surface px-2 py-1 text-[0.76rem] print:break-inside-avoid;
+        }
+        .hero-meta {
+          @apply flex min-w-[180px] gap-[5px] text-[0.88rem] text-muted max-md:mt-[26px];
+        }
+        .meta-item + .meta-item::before {
+          @apply me-2 opacity-50;
+          content: "•";
+        }
+        .section-number {
+          @apply text-[0.72rem] font-bold text-accent;
+        }
+        .timeline-item {
+          @apply grid gap-[5px] md:grid-cols-[150px_minmax(0,1fr)] md:gap-[26px];
+        }
+        .timeline-date {
+          @apply text-[0.78rem] text-muted md:pt-[3px];
+        }
+        .timeline-content {
+          @apply relative border-s border-line ps-[22px] before:absolute before:-start-1 before:top-[7px] before:h-[7px] before:w-[7px] before:rounded-full before:bg-accent before:content-[''];
+        }
+        .timeline-title {
+          @apply text-[1.05rem] font-bold;
+        }
+        .timeline-company {
+          @apply mb-3 mt-0.5 text-[0.85rem] text-accent;
+        }
+        .timeline-description {
+          @apply text-[0.88rem] text-muted;
+        }
+        .timeline-description ul {
+          @apply mt-2 list-disc ps-[18px];
+        }
+        .project {
+          @apply rounded-[14px] border border-line bg-surface p-[22px] print:break-inside-avoid;
+        }
+        .project h3 {
+          @apply mb-[7px] text-base font-bold;
+        }
+        .project p {
+          @apply mb-3.5 text-[0.84rem] text-muted;
+        }
+        .tags {
+          @apply flex flex-wrap gap-1.5;
+        }
+        .tag {
+          @apply rounded-full bg-accent-soft px-2 py-[3px] text-[0.7rem] text-accent;
+        }
+      }
+    </style>
   </head>
-  <body>
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <a class="brand" href="#top" data-bind="personal.name">Resume</a>
-        <nav class="nav" aria-label="Primary navigation">
-          <a href="#experience" data-i18n="nav.experience">Experience</a>
-          <a href="#skills" data-i18n="nav.skills">Skills</a>
-          <a href="#education" data-i18n="nav.education">Education</a>
-          <a href="#projects" data-i18n="nav.projects">Projects</a>
+
+  <body
+    class="bg-bg font-sans leading-[1.7] text-ink [&[dir=rtl]]:font-fa"
+  >
+    <header
+      class="sticky top-0 z-10 border-b border-line bg-[color-mix(in_srgb,var(--bg)_92%,transparent)] backdrop-blur-[14px] print:hidden"
+    >
+      <div
+        class="mx-auto flex min-h-16 w-[min(calc(100%-40px),1120px)] items-center gap-7"
+      >
+        <a
+          class="me-auto font-bold tracking-[-0.02em]"
+          href="#top"
+          data-bind="personal.name"
+          >Resume</a
+        >
+        <nav
+          class="hidden gap-[22px] text-[0.9rem] text-muted md:flex"
+          aria-label="Primary navigation"
+        >
+          <a class="hover:text-accent" href="#experience" data-i18n="nav.experience">Experience</a>
+          <a class="hover:text-accent" href="#skills" data-i18n="nav.skills">Skills</a>
+          <a class="hover:text-accent" href="#education" data-i18n="nav.education">Education</a>
+          <a class="hover:text-accent" href="#projects" data-i18n="nav.projects">Projects</a>
         </nav>
-        <div class="actions">
+        <div class="flex gap-2">
           <button
             id="themeToggle"
-            class="icon-button"
+            class="h-9 min-w-9 cursor-pointer rounded-[9px] border border-line bg-surface text-ink"
             aria-label="Toggle theme"
           >
             ☼
           </button>
-          <button id="languageToggle" class="language-button">FA</button>
+          <button
+            id="languageToggle"
+            class="h-9 min-w-9 cursor-pointer rounded-[9px] border border-line bg-surface text-xs font-bold text-ink"
+          >
+            FA
+          </button>
           <button
             id="pdfDownload"
-            class="icon-button"
+            class="h-9 min-w-9 cursor-pointer rounded-[9px] border border-line bg-surface text-ink"
             aria-label="Download PDF"
             title="Download PDF"
           >
@@ -45,61 +181,117 @@
     </header>
 
     <main id="top">
-      <section class="hero container">
-        <div class="hero-copy">
-          <p class="eyebrow" data-bind="personal.label"></p>
-          <h1 data-bind="personal.name"></h1>
-          <h2 data-bind="personal.title"></h2>
-          <p class="hero-summary" data-bind="personal.summary"></p>
-          <div class="links" id="heroLinks"></div>
+      <section
+        class="mx-auto w-[min(calc(100%-40px),1120px)] gap-10 border-b border-line pb-[52px] pt-16 md:flex md:items-end md:justify-between md:pb-[72px] md:pt-[92px] print:pt-5"
+      >
+        <div class="max-w-[760px]">
+          <p
+            class="mb-3.5 text-[0.78rem] font-bold uppercase tracking-[0.12em] text-accent rtl:tracking-normal"
+            data-bind="personal.label"
+          ></p>
+          <h1
+            class="text-[clamp(2.5rem,7vw,5.2rem)] font-bold leading-none tracking-[-0.055em]"
+            data-bind="personal.name"
+          ></h1>
+          <h2
+            class="mb-3 mt-5 text-[clamp(1.15rem,2vw,1.55rem)] font-medium text-muted"
+            data-bind="personal.title"
+          ></h2>
+          <p
+            class="max-w-[650px] text-base text-muted"
+            data-bind="personal.summary"
+          ></p>
+          <div class="links mt-6 flex flex-wrap gap-2.5" id="heroLinks"></div>
         </div>
       </section>
 
-      <div class="container page-grid">
-        <aside class="sidebar">
-          <section class="side-section" id="skills">
-            <h3 data-i18n="sections.skills">Skills</h3>
-            <div id="skillList" class="skill-list"></div>
+      <div
+        class="mx-auto w-[min(calc(100%-40px),1120px)] pt-[42px] md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-[70px] md:pt-[62px] print:gap-[35px] print:pt-[30px]"
+      >
+        <aside
+          class="mb-[50px] grid grid-cols-2 gap-[30px] border-b border-line pb-8 md:mb-0 md:block md:border-b-0 md:border-e md:pb-0 md:pe-7"
+        >
+          <section id="skills">
+            <h3
+              class="mb-4 text-[0.78rem] font-bold uppercase tracking-[0.1em] text-muted"
+              data-i18n="sections.skills"
+            >
+              Skills
+            </h3>
+            <div id="skillList" class="flex flex-wrap gap-[7px]"></div>
           </section>
-          <section class="side-section">
-            <h3 data-i18n="sections.languages">Languages</h3>
-            <div id="languageList" class="plain-list"></div>
+          <section class="md:mt-11">
+            <h3
+              class="mb-4 text-[0.78rem] font-bold uppercase tracking-[0.1em] text-muted"
+              data-i18n="sections.languages"
+            >
+              Languages
+            </h3>
+            <div
+              id="languageList"
+              class="grid gap-[7px] text-[0.82rem] text-muted"
+            ></div>
           </section>
         </aside>
 
-        <div class="content">
-          <section id="about" class="section">
-            <div class="section-heading">
-              <h2 data-i18n="sections.about">About</h2>
+        <div>
+          <section id="about" class="pb-[72px] print:pb-[35px]">
+            <div class="mb-[30px] flex items-baseline gap-3.5">
+              <h2
+                class="text-[1.45rem] font-bold tracking-[-0.025em]"
+                data-i18n="sections.about"
+              >
+                About
+              </h2>
             </div>
-            <p class="section-text" data-bind="about"></p>
+            <p class="max-w-[760px] text-muted" data-bind="about"></p>
           </section>
 
-          <section id="experience" class="section">
-            <div class="section-heading">
-              <h2 data-i18n="sections.experience">Experience</h2>
+          <section id="experience" class="pb-[72px] print:pb-[35px]">
+            <div class="mb-[30px] flex items-baseline gap-3.5">
+              <h2
+                class="text-[1.45rem] font-bold tracking-[-0.025em]"
+                data-i18n="sections.experience"
+              >
+                Experience
+              </h2>
             </div>
-            <div id="experienceList" class="timeline"></div>
+            <div id="experienceList" class="grid gap-8"></div>
           </section>
 
-          <section id="education" class="section">
-            <div class="section-heading">
-              <h2 data-i18n="sections.education">Education</h2>
+          <section id="education" class="pb-[72px] print:pb-[35px]">
+            <div class="mb-[30px] flex items-baseline gap-3.5">
+              <h2
+                class="text-[1.45rem] font-bold tracking-[-0.025em]"
+                data-i18n="sections.education"
+              >
+                Education
+              </h2>
             </div>
-            <div id="educationList" class="timeline"></div>
+            <div id="educationList" class="grid gap-8"></div>
           </section>
 
-          <section id="projects" class="section">
-            <div class="section-heading">
-              <h2 data-i18n="sections.projects">Projects</h2>
+          <section id="projects" class="pb-[72px] print:pb-[35px]">
+            <div class="mb-[30px] flex items-baseline gap-3.5">
+              <h2
+                class="text-[1.45rem] font-bold tracking-[-0.025em]"
+                data-i18n="sections.projects"
+              >
+                Projects
+              </h2>
             </div>
-            <div id="projectList" class="project-grid"></div>
+            <div
+              id="projectList"
+              class="grid gap-3.5 md:grid-cols-2"
+            ></div>
           </section>
         </div>
       </div>
     </main>
 
-    <footer class="footer container">
+    <footer
+      class="mx-auto flex w-[min(calc(100%-40px),1120px)] justify-between border-t border-line pb-[42px] pt-7 text-[0.78rem] text-muted"
+    >
       <span data-bind="personal.name"></span>
       <span>© <span id="year"></span></span>
     </footer>
