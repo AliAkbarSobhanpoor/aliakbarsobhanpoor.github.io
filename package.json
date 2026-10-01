@@ -1,0 +1,25 @@
+{
+  "name": "jsonresumetemplate",
+  "version": "1.0.0",
+  "description": "My Resume website deployed with Gihub pages",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./css/tailwind.css -o ./css/tailwind.generated.css --watch",
+    "build": "npx @tailwindcss/cli -i ./css/tailwind.css -o ./css/tailwind.generated.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliAkbarSobhanpoor/Resume.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AliAkbarSobhanpoor/Resume/issues"
+  },
+  "homepage": "https://github.com/AliAkbarSobhanpoor/Resume#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
