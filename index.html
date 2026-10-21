@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/tailwind.generated.css">
+    <link rel="stylesheet" href="./css/tailwind.generated.css" />
     <style>
       :root {
         --bg: #f6f7f9;
@@ -47,12 +47,9 @@
         }
       }
     </style>
-
   </head>
 
-  <body
-    class="bg-bg font-sans leading-[1.7] text-ink [&[dir=rtl]]:font-fa"
-  >
+  <body class="bg-bg font-sans leading-[1.7] text-ink [&[dir=rtl]]:font-fa">
     <header
       class="sticky top-0 z-10 border-b border-line bg-[color-mix(in_srgb,var(--bg)_92%,transparent)] backdrop-blur-[14px] print:hidden"
     >
@@ -69,10 +66,24 @@
           class="hidden gap-[22px] text-[0.9rem] text-muted md:flex"
           aria-label="Primary navigation"
         >
-          <a class="hover:text-accent" href="#experience" data-i18n="nav.experience">Experience</a>
-          <a class="hover:text-accent" href="#skills" data-i18n="nav.skills">Skills</a>
-          <a class="hover:text-accent" href="#education" data-i18n="nav.education">Education</a>
-          <a class="hover:text-accent" href="#projects" data-i18n="nav.projects">Projects</a>
+          <a
+            class="hover:text-accent"
+            href="#experience"
+            data-i18n="nav.experience"
+            >Experience</a
+          >
+          <a class="hover:text-accent" href="#skills" data-i18n="nav.skills"
+            >Skills</a
+          >
+          <a
+            class="hover:text-accent"
+            href="#education"
+            data-i18n="nav.education"
+            >Education</a
+          >
+          <a class="hover:text-accent" href="#projects" data-i18n="nav.projects"
+            >Projects</a
+          >
         </nav>
         <div class="flex gap-2">
           <button
@@ -102,29 +113,48 @@
 
     <main id="top">
       <section
-        class="mx-auto w-[min(calc(100%-40px),1120px)] gap-10 border-b border-line pb-[52px] pt-16 md:flex md:items-end md:justify-between md:pb-[72px] md:pt-[92px] print:pt-5"
+        class="mx-auto w-[min(calc(100%-40px),1120px)] border-b border-line pb-[52px] pt-16 md:pb-[72px] md:pt-[92px] print:pt-5"
       >
-        <div class="max-w-210">
-          <p
-            class="mb-3.5 text-[0.78rem] font-bold uppercase tracking-[0.12em] text-accent rtl:tracking-normal"
-            data-bind="personal.label"
-          ></p>
-          <h1
-            class="text-[clamp(2.5rem,7vw,5.2rem)] font-bold leading-none tracking-[-0.055em]"
-            data-bind="personal.name"
-          ></h1>
-          <h2
-            class="mb-3 mt-5 text-[clamp(1.15rem,2vw,1.55rem)] font-medium text-muted"
-            data-bind="personal.title"
-          ></h2>
-          <p
-            class="max-w-[650px] text-base text-muted"
-            data-bind="personal.summary"
-          ></p>
-          <div class="links mt-6 flex flex-wrap gap-2.5" id="heroLinks"></div>
-        </div>
-      </section>
+        <!-- Row: photo + label/name/title -->
+        <div
+          class="flex flex-col items-center gap-10 text-center md:flex-row md:text-start print:flex-row print:text-start"
+        >
+          <img
+            id="profilePhoto"
+            src="/media/profile.png"
+            alt="Ali Akbar Sobhanpoor"
+            width="224"
+            height="224"
+            loading="eager"
+            class="h-40 w-40 shrink-0 rounded-full border border-line bg-surface-soft object-cover md:h-56 md:w-56 print:h-28 print:w-28"
+          />
 
+          <div>
+            <p
+              class="mb-3.5 text-[0.78rem] font-bold uppercase tracking-[0.12em] text-accent rtl:tracking-normal"
+              data-bind="personal.label"
+            ></p>
+            <h1
+              class="text-[clamp(2.5rem,7vw,5.2rem)] font-bold leading-none tracking-[-0.055em]"
+              data-bind="personal.name"
+            ></h1>
+            <h2
+              class="mt-5 text-[clamp(1.15rem,2vw,1.55rem)] font-medium text-muted"
+              data-bind="personal.title"
+            ></h2>
+          </div>
+        </div>
+
+        <!-- Below the row: summary + social links -->
+        <p
+          class="mt-8 text-center text-base text-muted md:text-start print:text-start"
+          data-bind="personal.summary"
+        ></p>
+        <div
+          class="links mt-6 flex flex-wrap justify-center gap-2.5 md:justify-start print:justify-start"
+          id="heroLinks"
+        ></div>
+      </section>
       <div
         class="mx-auto w-[min(calc(100%-40px),1120px)] pt-[42px] md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-[70px] md:pt-[62px] print:gap-[35px] print:pt-[30px]"
       >
@@ -200,10 +230,7 @@
                 Projects
               </h2>
             </div>
-            <div
-              id="projectList"
-              class="grid gap-3.5 md:grid-cols-2"
-            ></div>
+            <div id="projectList" class="grid gap-3.5 md:grid-cols-2"></div>
           </section>
         </div>
       </div>

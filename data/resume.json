@@ -17,6 +17,7 @@
     }
   },
   "personal": {
+    "photo": "/media/profile.png",
     "label": {
       "en": "Backend Developer · Django",
       "fa": "برنامه‌نویس Backend · Django"
@@ -34,6 +35,10 @@
       "fa": "توسعه‌دهنده نرم‌افزار با ۳ سال تجربه در طراحی، توسعه و تست نرم‌افزارهای تحت وب؛ با تمرکز بر Django، بهینه‌سازی عملکرد، توسعه نرم‌افزارهای ایمن و یادگیری مداوم."
     },
     "links": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/aliakbar-sobhanpoor/"
+      },
       {
         "label": "GitHub",
         "url": "https://github.com/aliakbarsobhanpoor"
@@ -173,12 +178,7 @@
         "en": "Backend development and performance optimization for an educational management platform.",
         "fa": "توسعه Backend و بهینه‌سازی عملکرد یک سامانه مدیریت آموزشی."
       },
-      "stack": [
-        "Django",
-        "PostgreSQL",
-        "Redis",
-        "REST API"
-      ]
+      "stack": ["Django", "PostgreSQL", "Redis", "REST API"]
     },
     {
       "name": {
@@ -189,11 +189,7 @@
         "en": "Web deployment and infrastructure work for a car auction platform.",
         "fa": "استقرار وب و کار زیرساختی برای یک پلتفرم مزایده خودرو."
       },
-      "stack": [
-        "Docker",
-        "Nginx",
-        "Linux"
-      ]
+      "stack": ["Docker", "Nginx", "Linux"]
     }
   ],
   "languages": [
