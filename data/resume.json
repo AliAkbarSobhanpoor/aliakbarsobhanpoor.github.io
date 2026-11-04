@@ -201,6 +201,25 @@
         "fa": "یک وبسایت استاتیک که وظیفه آن جمع آوری و ارائه توضیحات درباره پایگاه های علمی پزشکی است "
       },
       "stack": ["HTML", "Tailwind CSS", "JavaScript"]
+    },
+    {
+      "name": {
+        "en": "Search AI",
+        "fa": "هوش مصنوعی جستجوی علمی"
+      },
+      "description": {
+        "en": "An AI-powered research platform that helps researchers develop, optimize, and translate high-quality search strategies for scientific databases, including Scopus, Web of Science, PubMed, and other scholarly resources. It assists in generating database-specific search queries, expanding keywords with controlled vocabulary such as MeSH terms, and refining search strategies to improve the precision and comprehensiveness of literature searches.",
+        "fa": "پلتفرمی مبتنی بر هوش مصنوعی برای کمک به پژوهشگران در طراحی، بهینه‌سازی و تبدیل راهبردهای جستجوی علمی در پایگاه‌های اطلاعاتی مختلف از جمله اسکوپوس، وب آو ساینس، پابمد و سایر منابع علمی. این پلتفرم با تولید کوئری‌های متناسب با ساختار هر پایگاه، گسترش کلیدواژه‌ها با استفاده از واژگان کنترل‌شده مانند اصطلاحنامه MeSH و بهبود راهبردهای جستجو، به افزایش دقت و جامعیت جستجوی منابع علمی کمک می‌کند."
+      },
+      "stack": [
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "Django",
+        "Django REST Framework",
+        "Django Channels",
+        "Docker"
+      ]
     }
   ],
   "languages": [
