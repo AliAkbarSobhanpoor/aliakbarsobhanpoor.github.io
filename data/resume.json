@@ -205,11 +205,11 @@
     {
       "name": {
         "en": "Search AI",
-        "fa": "هوش مصنوعی جستجوی علمی"
+        "fa": "هوش مصنوعی نگارش راهبرد جستجو"
       },
       "description": {
-        "en": "An AI-powered research platform that helps researchers develop, optimize, and translate high-quality search strategies for scientific databases, including Scopus, Web of Science, PubMed, and other scholarly resources. It assists in generating database-specific search queries, expanding keywords with controlled vocabulary such as MeSH terms, and refining search strategies to improve the precision and comprehensiveness of literature searches.",
-        "fa": "پلتفرمی مبتنی بر هوش مصنوعی برای کمک به پژوهشگران در طراحی، بهینه‌سازی و تبدیل راهبردهای جستجوی علمی در پایگاه‌های اطلاعاتی مختلف از جمله اسکوپوس، وب آو ساینس، پابمد و سایر منابع علمی. این پلتفرم با تولید کوئری‌های متناسب با ساختار هر پایگاه، گسترش کلیدواژه‌ها با استفاده از واژگان کنترل‌شده مانند اصطلاحنامه MeSH و بهبود راهبردهای جستجو، به افزایش دقت و جامعیت جستجوی منابع علمی کمک می‌کند."
+        "en": "An AI-powered platform designed to help researchers write, optimize, and translate scientific search queries across academic databases. It recommends suitable databases based on research topics and generates database-specific search strategies, enabling researchers to convert queries between platforms such as Scopus, Web of Science, and PubMed while adapting syntax, field tags, and controlled vocabularies to each database.",
+        "fa": "پلتفرمی مبتنی بر هوش مصنوعی برای کمک به پژوهشگران در نگارش، بهینه‌سازی و تبدیل کوئری‌های جستجوی علمی. این پلتفرم با تحلیل موضوع پژوهش، پایگاه‌های اطلاعاتی مناسب را پیشنهاد می‌دهد و امکان نگارش راهبردهای جستجو و تبدیل کوئری میان پایگاه‌هایی مانند اسکوپوس، وب آو ساینس و پابمد را با در نظر گرفتن تفاوت‌های ساختاری، عملگرها، فیلدهای جستجو و واژگان کنترل‌شده هر پایگاه فراهم می‌کند."
       },
       "stack": [
         "React",
