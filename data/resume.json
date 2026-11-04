@@ -190,6 +190,17 @@
         "fa": "استقرار وب و کار زیرساختی برای یک پلتفرم مزایده خودرو."
       },
       "stack": ["Docker", "Nginx", "Linux"]
+    },
+    {
+      "name": {
+        "en": "Medical Databases",
+        "fa": "پایگاه های داده پزشکی"
+      },
+      "description": {
+        "en": "A static website that collects and provides information about medical and scientific databases.",
+        "fa": "یک وبسایت استاتیک که وظیفه آن جمع آوری و ارائه توضیحات درباره پایگاه های علمی پزشکی است "
+      },
+      "stack": ["HTML", "Tailwind CSS", "JavaScript"]
     }
   ],
   "languages": [
